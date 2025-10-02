@@ -1,0 +1,10 @@
+:root{
+    --main-color:#f1206e;
+}
+
+.navbar .navbar-nav .active{
+     color: var(--main-color);
+}
+.navbar-nav{
+    gap: 10px;
+}
