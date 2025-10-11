@@ -1,6 +1,9 @@
 :root{
     --main-color:#f1206e;
 }
+.btn-white{
+    background-color: white;
+}
 .text-main{
     color: var(--main-color);
 }
@@ -123,7 +126,28 @@ height: 200px;
 .projects img:hover{
 transform: scale(1.05);
 }
-
-
-
 /*end project */
+/*start contact section*/
+.contact{
+    background-image: url(./../img/dark_dot.jpg);
+}
+.contact .form-control{
+    border: 0;
+     border-bottom: 1px solid #eee;
+    
+}
+.contact input:focus{
+    border-bottom: 1px solid var(--main-color);
+     box-shadow: none;
+}
+.contact textarea:focus{
+    border-bottom: 1px solid var(--main-color);
+     box-shadow: none;
+}
+.contact .form-control::placeholder{
+    color: #eee;
+}
+
+
+
+/*end contact section*/
