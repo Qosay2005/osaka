@@ -1,6 +1,9 @@
 :root{
     --main-color:#f1206e;
 }
+.text-main{
+    color: var(--main-color);
+}
 /* nav bar */
 .navbar .navbar-nav .active{
      color: var(--main-color);
@@ -43,3 +46,72 @@
     border-color: #ffffff;
 }
 /*end hero */
+/*start about */
+.animate-left, .animate-right, .animate-top{
+    transform: translateX(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+@keyframes slid-left{
+    from{
+           transform: translateX(-100%);
+           opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+@keyframes slid-right{
+    from{
+           transform: translateX(100%);
+           opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+@keyframes slid-top{
+    from{
+           transform: translateY(-100%);
+           opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+.animate-left{
+   animation-name: slid-left;
+   animation-duration: 3s;
+}
+.animate-right{
+   animation-name: slid-right;
+   animation-duration: 3s;
+}
+.animate-top{
+   animation-name: slid-top;
+   animation-duration: 3s;
+}
+/*end about */
+/*start testimonial */
+.testimonial img{
+width: 200px;
+height: 200px;
+}
+.carousel-indicators{
+    bottom: -38px;
+    
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #d9d9d9;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators .active {
+    background-color: black;
+}
+/*end testimonial */
